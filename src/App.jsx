@@ -1,19 +1,23 @@
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 import './App.css'
-import { toast } from 'react-toastify';
-import { Menu } from 'lucide-react';
+import Nav from './Component/Navbar/Nav';
+import { useState } from 'react';
 function App() {
-   const handleme = () => {
-   toast.info("Going to checkout 💳");
-  };
+  const [count,seCount]=useState(0);
   return (
     <>
-    
-     <h1 className='text-2xl text-center'>Lets Start the project. </h1>
-     <button className='btn btn-primary' onClick={handleme}> ore</button>
-     <ToastContainer />
-     <Menu>xox</Menu>
+    <section>
+      <nav className='w-full flex shadow-sm py-4 md:py-5'>
+        <Nav count={count}></Nav>
+      </nav>
+      
+    </section>
+
+
+    {/* To use React Toastify */}
+    <ToastContainer></ToastContainer>
     </>
   )
 }

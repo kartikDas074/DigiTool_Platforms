@@ -4,17 +4,29 @@ import 'react-toastify/dist/ReactToastify.css';
 import './App.css'
 import Nav from './Component/Navbar/Nav';
 import { useState } from 'react';
+import Banner from './Component/Banner/Banner';
+import Rating from './Component/Banner/Rating';
 function App() {
-  const [count,seCount]=useState(0);
+  const [count,setCount]=useState(0);
+  
   return (
     <>
-    <section>
+    {/* Header section */}
+    <header>
       <nav className='w-full flex shadow-sm py-4 md:py-5'>
         <Nav count={count}></Nav>
       </nav>
-      
-    </section>
-
+    </header>
+    <main>
+      {/* Creat Banner section */}
+      <section id='banner'>
+           <Banner></Banner>
+           <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-7.5 md:py-10'>
+              <Rating></Rating>
+           </div>
+           
+      </section>
+    </main>  
 
     {/* To use React Toastify */}
     <ToastContainer></ToastContainer>

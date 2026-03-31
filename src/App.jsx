@@ -9,6 +9,7 @@ import Rating from './Component/Banner/Rating';
 import Product from './Component/Products/Product';
 import Starts from './Component/GetStart/Starts';
 import Transparent_pricing from './Component/Pricing/Transparent_pricing';
+import Footer from './Component/Footer/Footer';
 function App() {
   const [count,setCount]=useState(0);
   let [card,setCard]=useState([]);
@@ -41,7 +42,11 @@ function App() {
           <Transparent_pricing></Transparent_pricing>
       </section>
     </main>  
-
+    
+    {/* Footer */}
+    <footer className='w-full bg-[#101727]'>
+      <Footer></Footer>
+    </footer>
     {/* To use React Toastify */}
     <ToastContainer></ToastContainer>
     </>

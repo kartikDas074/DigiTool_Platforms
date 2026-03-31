@@ -8,6 +8,7 @@ import Banner from './Component/Banner/Banner';
 import Rating from './Component/Banner/Rating';
 import Product from './Component/Products/Product';
 import Starts from './Component/GetStart/Starts';
+import Transparent_pricing from './Component/Pricing/Transparent_pricing';
 function App() {
   const [count,setCount]=useState(0);
   let [card,setCard]=useState([]);
@@ -35,6 +36,9 @@ function App() {
       </section>
       <section className='bg-[#F9FAFC]'>
         <Starts></Starts>
+      </section>
+      <section>
+          <Transparent_pricing></Transparent_pricing>
       </section>
     </main>  
 

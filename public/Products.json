@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "AI Content Writer Pro",
+    "description": "Generate high-quality blog posts and social media copies in seconds using GPT-4.",
+    "price": 29.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "Popular",
+    "features": ["Unlimited Generations", "SEO Optimization", "20+ Languages"],
+    "icon": "Brain"
+  },
+  {
+    "id": 2,
+    "name": "CodeGuard Security",
+    "description": "Real-time vulnerability scanning and automated patches for your repositories.",
+    "price": 149.00,
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "New",
+    "features": ["GitHub Integration", "Daily Scans", "Critical Alerts"],
+    "icon": "ShieldCogCorner"
+  },
+  {
+    "id": 3,
+    "name": "CloudSync Analytics",
+    "description": "Comprehensive dashboard to track your SaaS metrics and user behavior.",
+    "price": 49.00,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "Best Seller",
+    "features": ["Heatmaps", "Custom Reports", "Real-time Data"],
+    "icon": "ChartNoAxesCombined"
+  },
+  {
+    "id": 4,
+    "name": "DesignKit UI",
+    "description": "A massive collection of React components and Figma design templates.",
+    "price": 89.00,
+    "period": "one-time",
+    "tag": "Premium",
+    "tagType": "Popular",
+    "features": ["500+ Components", "Figma Files", "Lifetime Updates"],
+    "icon": "LayoutTemplate"
+  },
+  {
+    "id": 5,
+    "name": "MailFlow Automator",
+    "description": "Streamline your email marketing with advanced branching logic and drip campaigns.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "New",
+    "features": ["A/B Testing", "Smart Segmentation", "CRM Sync"],
+    "icon": "Mail"
+  },
+  {
+    "id": 6,
+    "name": "SEO Rocket",
+    "description": "Analyze your website's performance and get actionable insights to rank #1.",
+    "price": 299.00,
+    "period": "yearly",
+    "tag": "Expert Choice",
+    "tagType": "Best Seller",
+    "features": ["Backlink Checker", "Keyword Explorer", "Site Audit"],
+    "icon": "Rocket"
+  },
+  {
+    "id": 7,
+    "name": "TaskFlow CRM",
+    "description": "Manage leads and projects in one unified workspace with team collaboration.",
+    "price": 12.00,
+    "period": "monthly",
+    "tag": "Top Rated",
+    "tagType": "Popular",
+    "features": ["Kanban Boards", "Team Chat", "API Access"],
+    "icon": "Users"
+  },
+  {
+    "id": 8,
+    "name": "SecurePass Enterprise",
+    "description": "Advanced password management and 2FA enforcement for large organizations.",
+    "price": 599.00,
+    "period": "one-time",
+    "tag": "Secure",
+    "tagType": "Best Seller",
+    "features": ["Biometric Auth", "Admin Console", "Audit Logs"],
+    "icon": "Key"
+  }
+]

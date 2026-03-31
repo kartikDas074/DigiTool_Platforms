@@ -30,7 +30,7 @@ function App() {
 
       {/* Products Section */}
       <section>
-         <Product></Product>
+         <Product count={count} setCount={setCount}></Product>
       </section>
     </main>  
 

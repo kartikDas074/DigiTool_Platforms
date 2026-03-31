@@ -9,7 +9,7 @@ import Rating from './Component/Banner/Rating';
 import Product from './Component/Products/Product';
 function App() {
   const [count,setCount]=useState(0);
-  
+  let [card,setCard]=useState([]);
   return (
     <>
     {/* Header section */}
@@ -30,7 +30,7 @@ function App() {
 
       {/* Products Section */}
       <section>
-         <Product count={count} setCount={setCount}></Product>
+         <Product count={count} setCount={setCount} card={card} setCard={setCard}></Product>
       </section>
     </main>  
 

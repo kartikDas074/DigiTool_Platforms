@@ -3,14 +3,23 @@ import { toast } from 'react-toastify';
 
 import * as Icons from "lucide-react";
 import Features from './Features';
-const ProDuctCard = ({product,count,setCount}) => {
+const ProDuctCard = ({product,count,setCount,card,setCard,total,setTotal}) => {
     const Icon = Icons[product.icon];
     const [buy,setBuy]=useState('Buy Now');
-    const ClickBuy=()=>{
+    const ClickBuy=(product)=>{
+        const isExist = card.find(item => item.id === product.id);
+        if(!isExist)
+        {
+        setCard([...card,product]);
         setCount(count+1);
-        setBuy('Added To Card')
-        toast.success("Added to card 🛒", {
-      theme: "colored", 
+        let val=parseFloat(total)+parseFloat(product.price);
+        let valu=Number(val.toFixed(3));
+        setTotal(valu);
+        }
+         setBuy('Added To Cart');
+        toast.success("Added to cart 🛒", {
+        theme: "dark", 
+         autoClose: 1500
     });
     }
     return (
@@ -34,7 +43,7 @@ const ProDuctCard = ({product,count,setCount}) => {
                     product.features.map(item=><Features key={item} item={item}></Features>)
                 }
              </ul>
-             <button className='btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-full rounded-[30px] text-[#FFFFFF]' onClick={ClickBuy}>{buy}</button>
+             <button className='btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-full rounded-[30px] text-[#FFFFFF]' onClick={()=>{ClickBuy(product)}}>{buy}</button>
 
 
              

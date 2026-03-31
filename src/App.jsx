@@ -1,6 +1,5 @@
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 import './App.css'
 import Nav from './Component/Navbar/Nav';
 import { useState } from 'react';
@@ -10,6 +9,7 @@ import Product from './Component/Products/Product';
 import Starts from './Component/GetStart/Starts';
 import Transparent_pricing from './Component/Pricing/Transparent_pricing';
 import Footer from './Component/Footer/Footer';
+import Transform from './Component/Pricing/Transform';
 function App() {
   const [count,setCount]=useState(0);
   let [card,setCard]=useState([]);
@@ -40,6 +40,9 @@ function App() {
       </section>
       <section>
           <Transparent_pricing></Transparent_pricing>
+      </section>
+      <section className='w-full bg-[#5074c8]'>
+          <Transform ></Transform>
       </section>
     </main>  
     

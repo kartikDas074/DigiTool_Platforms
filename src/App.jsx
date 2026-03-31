@@ -7,6 +7,7 @@ import { useState } from 'react';
 import Banner from './Component/Banner/Banner';
 import Rating from './Component/Banner/Rating';
 import Product from './Component/Products/Product';
+import Starts from './Component/GetStart/Starts';
 function App() {
   const [count,setCount]=useState(0);
   let [card,setCard]=useState([]);
@@ -31,6 +32,9 @@ function App() {
       {/* Products Section */}
       <section>
          <Product count={count} setCount={setCount} card={card} setCard={setCard}></Product>
+      </section>
+      <section className='bg-[#F9FAFC]'>
+        <Starts></Starts>
       </section>
     </main>  
 

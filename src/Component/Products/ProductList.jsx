@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import ProDuctCard from './ProDuctCard';
 
-let Products=fetch('../../../public/Products.json').then(data=>data.json());
+let Products=fetch('/Products.json').then(data=>data.json());
   
 const ProductList = ({count,setCount,card,setCard,total,setTotal}) => {
     let All_products=Products;

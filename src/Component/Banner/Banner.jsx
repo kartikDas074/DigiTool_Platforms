@@ -2,7 +2,7 @@ import React from 'react';
 import banner from '../../assets/banner.png'
 const Banner = () => {
     return (
-        <div className='w-full max-w-[90vw] mx-auto  justify-center items-center py-15 lg:py-20 gap-[20px] grid grid-cols-1 md:grid-cols-2'>
+        <div className='w-full max-w-[95vw] mx-auto md:max-w-[85vw]  justify-center items-center py-15 lg:py-20 gap-[20px] grid grid-cols-1 md:grid-cols-2'>
             <div>
                 <div className='bg-linear-to-r from-[#4F39F6]/10 to-[#9514FA]/10 px-3 py-1.25 flex justify-center items-center gap-[8px] rounded-[30px] w-[80%]'>
                 <div className='h-7 w-7 rounded-full bg-linear-to-r from-[#4F39F6]/20 to-[#9514FA]/20 flex justify-center items-center'>

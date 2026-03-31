@@ -8,12 +8,12 @@ const Nav = ({count}) => {
     const [open,setOpen]=useState(true);
     let menu=menuItems.map(menu=><MenuItem key={menu} menu={menu}></MenuItem>)
     return (
-        <div className='w-full max-w-[95vw] mx-auto flex justify-between items-center' >
+        <div className='w-full max-w-[95vw] md:max-w-[85vw] mx-auto flex justify-between items-center' >
             <div className='flex gap-2.5 justify-center items-center'>
                 <span onClick={()=>{setOpen(!open)}} className='md:hidden'>
                     {open?<Menu></Menu>:<X></X>}
                 </span>
-                <h1 className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-[24px] font-extrabold text-transparent md:text-[40px]'>
+                <h1 className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-[24px] font-extrabold text-transparent md:text-[50px]'>
                     DigiTools
                 </h1>
             </div>

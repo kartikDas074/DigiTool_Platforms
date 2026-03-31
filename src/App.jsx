@@ -6,6 +6,7 @@ import Nav from './Component/Navbar/Nav';
 import { useState } from 'react';
 import Banner from './Component/Banner/Banner';
 import Rating from './Component/Banner/Rating';
+import Product from './Component/Products/Product';
 function App() {
   const [count,setCount]=useState(0);
   
@@ -21,10 +22,15 @@ function App() {
       {/* Creat Banner section */}
       <section id='banner'>
            <Banner></Banner>
-           <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-7.5 md:py-10'>
+           <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-7.5 md:py-10 shadow-2xl'>
               <Rating></Rating>
            </div>
            
+      </section>
+
+      {/* Products Section */}
+      <section>
+         <Product></Product>
       </section>
     </main>  
 

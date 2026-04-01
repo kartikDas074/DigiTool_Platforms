@@ -1,16 +1,25 @@
-# React + Vite
+Name of the Project: DigiTool PlatForm — Smart Solutions for Modern Creators.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description:
 
-Currently, two official plugins are available:
+ I built this project to solve a simple problem: making digital tool discovery and management effortless. DigiTool PlatForm is a sleek, one-stop platform where users can browse high-quality tools, compare features, and manage their selections through an interactive cart system. It’s not just a product list; it’s a seamless experience designed to help professionals find exactly what they need to boost their productivity without any clutter.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Technologies Used:
 
-## React Compiler
+    1. React.js (For the fast and reactive UI)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+    2.Tailwind CSS & DaisyUI (For that clean, modern, and fully responsive look)
 
-## Expanding the ESLint configuration
+    3.React-Icons (To keep the UI visually intuitive)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    4.React-Toastify (For those smooth, non-intrusive user alerts)
+
+    5.JSON (To manage and simulate dynamic product data)
+
+ Key Features: 
+ 
+     1.  Dynamic Content Toggling: I’ve implemented a smooth toggle system between the 'Product' and 'Cart' sections. This keeps the workspace clean, allowing users to switch focus between browsing new tools and reviewing their selected items with a single click.
+
+     2. Smart Cart Management: The project features a real-time cart functionality where users can add products, track the total count in the navbar, and remove items individually. It even includes a "Proceed to Checkout" flow that clears the deck once the user is done.
+
+     3. Context-Aware Notifications: To make the app feel alive, I integrated React-Toastify. Whether you're adding a tool to your cart, removing one, or checking out, you get instant, friendly feedback that confirms your action was successful.

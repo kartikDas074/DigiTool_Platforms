@@ -29,7 +29,7 @@ const Nav = ({count}) => {
                         <img className='h-4 w-4' src={CartIcon} alt="" />
                         <p className={`absolute -top-2 bg-red-300 rounded-full left-1.5 px-[3px] text-[8px] flex justify-center items-center ${count>0?'flex':'hidden'}`}>{count}</p>
                       </div>
-                      <p className='text-[16px] font-semibold text-[#101727]'>LogIn</p>
+                      <p className='text-[16px] font-semibold text-[#101727] cursor-pointer hover:bg-blue-700 hover:text-[#FFFFFF] hover:px-[10px] hover:py-[5px] hover:rounded-[8px]' >LogIn</p>
                 </div>
                
                <button className='btn bg-linear-to-r from-[#4F39F6] to-[#9514FA]  text-[#FFFFFF] rounded-3xl text-[16px] font-semibold'>Get Started</button>

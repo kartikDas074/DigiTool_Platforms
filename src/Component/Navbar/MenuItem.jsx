@@ -2,7 +2,7 @@ import React from 'react';
 
 const MenuItem = ({menu}) => {
     return (
-       <li className='text-[16px] font-normal md:font-semibold text-[#101727]'>{menu}</li>
+       <li className='text-[16px] font-normal md:font-semibold text-[#101727] cursor-pointer hover:text-blue-600'>{menu}</li>
     );
 };
 

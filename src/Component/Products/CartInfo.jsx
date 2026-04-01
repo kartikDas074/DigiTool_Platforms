@@ -32,8 +32,11 @@ const CartInfo = ({product,count,setCount,card,setCard,total, setTotal}) => {
                     card.map(Cart=><CartProduct count={count} setCount={setCount} all={card} setAll={setCard} total={total} setTot={setTotal} key={Cart.id} cart={Cart}></CartProduct>)
                 }
             </div>
- 
-            <p className='text-[16px] font-bold text-[black]'>Total : {total}$</p>
+            <div className='w-full   flex justify-between items-center my-[16px]'>
+              <div className='text-[16px] font-bold text-[black]'>Total :</div>
+              <div className='text-[24px] font-bold text-[black]'>  {total}$</div>
+            </div>
+            
             <div className='flex justify-center items-center w-full'>
                 <button className='btn w-[60%] btn-primary rounded-[30px]' onClick={AllVanish}>Proceed To Checkout</button>
             </div>
